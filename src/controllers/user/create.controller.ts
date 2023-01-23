@@ -8,7 +8,7 @@ const createUserController = async (
 ): Promise<Response> => {
   const user = await createUserService(req.validatedBody as IUserBody);
 
-  return res.status(200).json(user);
+  return res.status(201).json(user);
 };
 
 export default createUserController;
